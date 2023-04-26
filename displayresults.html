@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Display Results</title>
+	<style>
+		pre {
+			background-color: #f2f2f2;
+			padding: 10px;
+			overflow-x: auto;
+		}
+	</style>
+</head>
+<body>
+	<h1>URL Data</h1>
+	<pre>{{ url_data | tojson | safe }}</pre>
+	
+	<h1>Channel Data</h1>
+	<pre>{{ channel_data | tojson | safe }}</pre>
+</body>
+</html>
